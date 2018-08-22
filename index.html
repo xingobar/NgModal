@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Modal套件</title>
+        <link rel="stylesheet" href="./css/modal_animation.css">
+        <link rel="stylesheet" href="./scss/ng_modal.css">
+    </head>
+    <body>
+        <div>
+            <h1>Modal 套件測試</h1>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/ng_modal.js"></script>
+    <script type="text/javascript">
+        NgModal.alert({
+            header:false,
+            yes:{
+                text:'確定'
+            },
+            animate:'ng-modal-scale-jump',
+            body:{
+                text:'測試彈窗'
+            }
+        });
+    </script>
+</html>

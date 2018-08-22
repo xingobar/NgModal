@@ -1,0 +1,55 @@
+body {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#alert_modal_body {
+	line-height: 8rem;
+	text-align: center;
+}
+
+#ng_modal_outside {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	background-color: #e0e0e0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.ng-modal {
+		background-color: white;
+		font-size: 1.2rem;
+		width: 30rem;
+		height: 11rem;
+
+		.ng-modal-content {
+			height: 100%;
+			position: relative;
+
+			.ng-modal-footer {
+				position: absolute;
+				bottom: 10px;
+				left: 35%;
+
+				button {
+					background-color: #00acc1;
+					color: white;
+					width: 10rem;
+					height: 2rem;
+					border: none;
+					border-radius: 5px;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
