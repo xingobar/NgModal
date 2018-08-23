@@ -1,25 +1,20 @@
 {
-  "name": "ng-dialog-simple",
-  "version": "1.2.0",
-  "description": "This is a modal plugin",
-  "main": "ng_modal.min.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xingobar/NgModal.git"
-  },
-  "keywords": [
-    "jquery-plugin",
-    "ecosystem:jquery",
-    "NgModal",
-    "Modal"
-  ],
-  "author": "GaryNg",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xingobar/NgModal/issues"
-  },
-  "homepage": "https://github.com/xingobar/NgModal#readme"
+	"name": "ng-dialog-simple",
+	"version": "1.4.0",
+	"description": "This is a modal plugin",
+	"main": "ng_modal.min.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xingobar/NgModal.git"
+	},
+	"keywords": [ "jquery-plugin", "ecosystem:jquery", "NgModal", "Modal" ],
+	"author": "GaryNg",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/xingobar/NgModal/issues"
+	},
+	"homepage": "https://github.com/xingobar/NgModal#readme"
 }
