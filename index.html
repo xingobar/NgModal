@@ -39,14 +39,15 @@
         NgModal.confirm({
             header:{
                 show:false,
-                text:'header'
+                text:'demo header',
             },
             yes:{
                 text:'確定'
             },
             animate:'ng-modal-scale-jump',
             body:{
-                text:'confirm 測試'
+                text:'confirm 測試',
+                content: '<div><h4>demo</h4></div>'
             },
             shadow:true,
             cancel:function() {

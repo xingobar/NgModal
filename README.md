@@ -1,8 +1,7 @@
 # ng-dialog-simple plugin
 ps:required jquery 
 
-<p>引入Jquery:</p>
-
+<p>include jQuery:</p>
 <pre>
     <code>
         < script type="text/javascript" src="./js/jquery-3.3.1.min.js"/>
@@ -30,10 +29,12 @@ ps:required jquery
         NgModal.[alert|confirm]({
             header:{
                 show:boolean, // whether show header or not
-                text:....     // show header text
+                text:.... ,    // show header text
+                content:....   // custom modal header content
             }, 
             body:{
-                text: .... // modal body text
+                text: ...., // modal body text
+                content:...., // custom modal body content
             },
             yes:{
                 text: .... // modal footer yes text
