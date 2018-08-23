@@ -9,8 +9,10 @@
 
 <p>引入ng_modal.css 以及 modal_animation.css</p>
 <pre>
-     <link rel="stylesheet" href="./css/ng_modal_animation.css"/>
-     <link rel="stylesheet" href="./css/ng_modal.css"/>
+  <code>
+     < link rel="stylesheet" href="./css/ng_modal_animation.css"/>
+     < link rel="stylesheet" href="./css/ng_modal.css"/>
+  </code>
 </pre>
 
 <p>引入ng_modal.min.js</p>
