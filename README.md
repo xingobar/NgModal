@@ -1,4 +1,4 @@
-# NgModal 套件開發
+# ng-dialog-simple 套件開發
 附註:此套件需搭配 jquery 
 
 <p>引入Jquery:</p>
