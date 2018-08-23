@@ -38,8 +38,11 @@ body {
         min-height: 5rem;
         text-align: center;
         padding-bottom: 10px; }
+        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-body #ng_modal_prompt_textarea {
+          resize: none;
+          outline: auto; }
       #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer {
-        padding-bottom: 15px;
+        padding: 15px 0px;
         height: 2rem; }
         #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button {
           color: white;

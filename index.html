@@ -15,26 +15,31 @@
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/ng_modal.js"></script>
     <script type="text/javascript">
-        // NgModal.alert({
+
+        // NgModal.prompt({
         //     header:{
         //         show:false,
-        //         text:'header'
+        //         text:'demo header',
         //     },
         //     yes:{
         //         text:'確定'
         //     },
-        //     animate:'ng-rotate',
-        //     body:{
-        //         text:'測試彈窗'
+        //     no: {
+        //         text:'取消'
+        //     },
+        //     animate:'ng-modal-scale-jump',
+        //     shadow:true,
+        //     cancel:function() {
+        //         console.log('[trigger cancel button]');
         //     },
         //     close:function() {
-        //         demo();
-        //     }
-        // });
-
-        // function demo() {
-        //     console.log('set close function')
-        // }
+        //         console.log('[trigger yes button]');
+        //     },
+        //     shadowClose:false,
+        //     time:1000000,
+        //     backdrop:'transparent',
+        //     draggable:false,
+        // })
 
         NgModal.confirm({
             header:{
@@ -62,7 +67,7 @@
             shadowClose:false,
             time:1000000,
             backdrop:'transparent',
-            draggable:true,
+            draggable:false,
         })
     </script>
 </html>

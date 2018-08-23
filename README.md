@@ -26,7 +26,7 @@ ps:required jquery
 <p>description</p>
 <pre>
     <code>
-        NgModal.[alert|confirm]({
+        NgModal.[alert|confirm|prompt]({
             header:{
                 show:boolean, // whether show header or not
                 text:.... ,    // show header text
@@ -35,6 +35,7 @@ ps:required jquery
             body:{
                 text: ...., // modal body text
                 content:...., // custom modal body content
+                height:... (integer), // modal body height
             },
             yes:{
                 text: .... // modal footer yes text
@@ -52,6 +53,7 @@ ps:required jquery
             maxWidth: ....(integer), // modal max width
             maxHeight: .... (integer), // modal max height
             draggable: boolean, // whether modal can move or not 
+            zIndex: ....(integer), // set modal z-index
         })
     </code>
 </pre>
