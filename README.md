@@ -54,6 +54,7 @@ ps:required jquery
             maxHeight: .... (integer), // modal max height
             draggable: boolean, // whether modal can move or not 
             zIndex: ....(integer), // set modal z-index
+            closeBtn: boolean, // whether show modal close button or not
         })
     </code>
 </pre>

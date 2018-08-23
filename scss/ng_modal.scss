@@ -14,17 +14,12 @@ body {
 	justify-content: center;
 }
 
-// #alert_modal_body {
-// 	line-height: 8rem;
-// 	text-align: center;
-// }
-
 #ng_modal_outside {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1050;
-	background-color: #e0e0e0;
+	background-color: rgba(0, 0, 0, .55);
 	right: 0;
 	bottom: 0;
 	display: flex;
@@ -46,6 +41,37 @@ body {
 		.ng-modal-content {
 			height: 100%;
 			position: relative;
+
+			.ng-modal-title-close {
+				position: absolute;
+				right: 10px;
+				top: 5px;
+				width: 32px;
+				height: 32px;
+				opacity: 0.3;
+
+				&:hover {
+					opacity: 1;
+				}
+
+				&:before {
+					transform: rotate(45deg);
+				}
+
+				&:after {
+					transform: rotate(-45deg);
+				}
+
+				&:before,
+				&:after {
+					position: absolute;
+					left: 15px;
+					content: ' ';
+					height: 33px;
+					width: 2px;
+					background-color: #333;
+				}
+			}
 
 			.ng-modal-body {
 				padding-top: 3rem;
