@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Modal套件</title>
         <link rel="stylesheet" href="./css/modal_animation.css">
         <link rel="stylesheet" href="./scss/ng_modal.css">
@@ -14,22 +15,46 @@
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/ng_modal.js"></script>
     <script type="text/javascript">
-        NgModal.alert({
-            header:false,
+        // NgModal.alert({
+        //     header:{
+        //         show:false,
+        //         text:'header'
+        //     },
+        //     yes:{
+        //         text:'確定'
+        //     },
+        //     animate:'ng-rotate',
+        //     body:{
+        //         text:'測試彈窗'
+        //     },
+        //     close:function() {
+        //         demo();
+        //     }
+        // });
+
+        // function demo() {
+        //     console.log('set close function')
+        // }
+
+        NgModal.confirm({
+            header:{
+                show:false,
+                text:'header'
+            },
             yes:{
                 text:'確定'
             },
-            animate:'ng-rotate',
+            animate:'ng-modal-scale-jump',
             body:{
-                text:'測試彈窗'
+                text:'confirm 測試'
+            },
+            shadow:true,
+            cancel:function() {
+                console.log('[trigger cancel button]');
             },
             close:function() {
-                demo();
+                console.log('[trigger yes button]');
             }
-        });
-
-        function demo() {
-            console.log('set close function')
-        }
+        })
     </script>
 </html>

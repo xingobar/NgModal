@@ -28,8 +28,11 @@
 <p>用法</p>
 <pre>
     <code>
-        NgModal.alert({
-            header:boolean, //是否顯示header
+        NgModal.[alert|confirm]({
+            header:{
+                show:boolean, //是否顯示header
+                text:....     //顯示什麼文字
+            }, 
             body:{
                 text: .... // modal body 內文
             },
@@ -38,6 +41,9 @@
             },
             animate: .... ,// 動畫
             close: .... , //在關閉前想做些什麼事情
+            backdrop: .... , // 顯示彈窗時的背景色
+            cancel: function({....}), // 取消前要做什麼事情
+            shadow: boolean, //是否要陰影
         })
     </code>
 </pre>

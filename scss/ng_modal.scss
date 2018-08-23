@@ -8,10 +8,16 @@ body {
 	justify-content: center;
 }
 
-#alert_modal_body {
-	line-height: 8rem;
-	text-align: center;
+.flex-end {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 }
+
+// #alert_modal_body {
+// 	line-height: 8rem;
+// 	text-align: center;
+// }
 
 #ng_modal_outside {
 	position: fixed;
@@ -29,25 +35,47 @@ body {
 		background-color: white;
 		font-size: 1.2rem;
 		width: 30rem;
-		height: 11rem;
+		min-height: 11rem;
+
+		&.ng-modal-shadow {
+			box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999,
+				6px 6px 0px #999;
+		}
 
 		.ng-modal-content {
 			height: 100%;
 			position: relative;
 
+			.ng-modal-body {
+				padding-top: 3rem;
+				min-height: 5rem;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+
 			.ng-modal-footer {
-				position: absolute;
-				bottom: 10px;
-				left: 35%;
+				padding-bottom: 15px;
+				height: 2rem;
 
 				button {
-					background-color: #00acc1;
 					color: white;
 					width: 10rem;
 					height: 2rem;
 					border: none;
 					border-radius: 5px;
 					font-size: 1rem;
+				}
+
+				button[name="yes"] {
+					background-color: #00acc1;
+				}
+
+				button[name="cancel"] {
+					background-color: #f4511e;
+				}
+
+				.ng-modal-btn-margin {
+					margin-right: 0.8rem;
 				}
 			}
 		}
