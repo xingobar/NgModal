@@ -4,9 +4,7 @@
 <p>引入Jquery:</p>
 
 <pre>
-    <code>
-       <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script> 
-    </code>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script> 
 </pre>
 
 <p>引入ng_modal.css 以及 modal_animation.css</p>
