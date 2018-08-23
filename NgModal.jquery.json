@@ -1,0 +1,29 @@
+{
+	"name": "NgModal",
+	"title": "JQuery NgModal",
+	"description": "This is a modal plugin",
+	"keywords": [ "NgModal", "ngModal", "Modal", "modal" ],
+	"version": "1.0.0",
+	"author": {
+		"name": "Gary Ng",
+		"url": "https://github.com/xingobar/NgModal"
+	},
+	"maintainers": [
+		{
+			"name": "Gary Ng",
+			"url": "https://github.com/xingobar/NgModal"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/xingobar/NgModal"
+		}
+	],
+	"bugs": "https://github.com/xingobar/NgModal/issues",
+	"homepage": "https://github.com/xingobar/NgModal",
+	"docs": "https://github.com/xingobar/NgModal",
+	"dependencies": {
+		"jquery": ">=3.3.1"
+	}
+}
