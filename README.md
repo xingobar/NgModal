@@ -39,6 +39,9 @@ ps:required jquery
             yes:{
                 text: .... // modal footer yes text
             },
+            no: {
+                text: .... // modal footer cancel text
+            },
             animate: .... ,// show and close animation
             close: .... , // modal footer yes button callback
             backdrop: .... , // backdrop color
@@ -48,6 +51,7 @@ ps:required jquery
             time: ....., // close after xx seconds
             maxWidth: ....(integer), // modal max width
             maxHeight: .... (integer), // modal max height
+            draggable: boolean, // whether modal can move or not 
         })
     </code>
 </pre>
