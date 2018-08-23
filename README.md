@@ -1,6 +1,5 @@
 # NgModal 套件開發
 附註:此套件需搭配 jquery 
-# 暫且只有alert
 
 <p>引入Jquery:</p>
 
