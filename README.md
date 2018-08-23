@@ -46,6 +46,8 @@ ps:required jquery
             shadow: boolean, //whether show shadow or not 
             shadowClose:boolean, // when click modal outside whether modal close or not (default true)
             time: ....., // close after xx seconds
+            maxWidth: ....(integer), // modal max width
+            maxHeight: .... (integer), // modal max height
         })
     </code>
 </pre>

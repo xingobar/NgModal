@@ -2,8 +2,8 @@
 .ng-rotate {
 	-webkit-animation-name: ngModalRotate;
 	animation-name: ngModalRotate;
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -11,8 +11,8 @@
 .ng-rotate-end {
 	-webkit-animation-name: ngModalRotateEnd;
 	animation-name: ngModalRotateEnd;
-	-webkit-animation-direction: 2s;
-	animation-direction: 2s;
+	-webkit-animation-direction: 1s;
+	animation-direction: 1s;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
