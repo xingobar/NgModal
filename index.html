@@ -10,6 +10,7 @@
     <body>
         <div>
             <h1>Modal 套件測試</h1>
+            <button type="button" id="show">顯示彈窗</button>
         </div>
     </body>
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
@@ -41,33 +42,43 @@
         //     draggable:false,
         // })
 
-        NgModal.confirm({
-            header:{
-                show:false,
-                text:'demo header',
-            },
-            yes:{
-                text:'確定'
-            },
-            no: {
-                text:'取消'
-            },
-            animate:'ng-modal-scale-jump',
-            body:{
-                text:'confirm 測試',
-                content: '<div><h4>demo</h4></div>'
-            },
-            shadow:true,
-            cancel:function() {
-                console.log('[trigger cancel button]');
-            },
-            close:function() {
-                console.log('[trigger yes button]');
-            },
-            shadowClose:false,
-            time:1000000,
-            draggable:false,
-            closeBtn:true
+        $(document).ready(function() {
+            demo();
+            $('#show').click(function() {
+                demo();
+            })
         })
+
+        function demo() {
+            NgModal.confirm({
+                header:{
+                    show:false,
+                    text:'demo header',
+                },
+                yes:{
+                    text:'確定'
+                },
+                no: {
+                    text:'取消'
+                },
+                animate:'ng-modal-scale-jump',
+                body:{
+                    text:'confirm 測試',
+                    content: '<div><h4>demo</h4></div>'
+                },
+                shadow:true,
+                cancel:function() {
+                    console.log('[trigger cancel button]');
+                },
+                close:function() {
+                    console.log('[trigger yes button]');
+                },
+                shadowClose:false,
+                time:1000000,
+                draggable:false,
+                closeBtn:true
+            })
+        }
+
     </script>
 </html>
