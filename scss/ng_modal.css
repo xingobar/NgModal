@@ -1,81 +1,159 @@
 body {
-  background-color: rgba(0, 0, 0, 0.5); }
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
 .flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
 
 .flex-end {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center; }
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
 
 #ng_modal_outside {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  background-color: rgba(0, 0, 0, 0.55);
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px; }
-  #ng_modal_outside .ng-modal {
-    background-color: white;
-    font-size: 1.2rem;
-    width: 30rem;
-    min-height: 11rem; }
-    #ng_modal_outside .ng-modal.ng-modal-shadow {
-      box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999; }
-    #ng_modal_outside .ng-modal .ng-modal-content {
-      height: 100%;
-      position: relative; }
-      #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close {
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        width: 32px;
-        height: 32px;
-        opacity: 0.3; }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:hover {
-          opacity: 1; }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:before {
-          transform: rotate(45deg); }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:after {
-          transform: rotate(-45deg); }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:before, #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:after {
-          position: absolute;
-          left: 15px;
-          content: ' ';
-          height: 33px;
-          width: 2px;
-          background-color: #333; }
-      #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-body {
-        padding-top: 3rem;
-        min-height: 5rem;
-        text-align: center;
-        padding-bottom: 10px; }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-body #ng_modal_prompt_textarea {
-          resize: none;
-          outline: auto; }
-      #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer {
-        padding: 15px 0px;
-        height: 2rem; }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button {
-          color: white;
-          width: 10rem;
-          height: 2.5rem;
-          border: none;
-          border-radius: 5px;
-          font-size: 1rem; }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button[name="yes"] {
-          background-color: #00acc1; }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button[name="cancel"] {
-          background-color: #f4511e; }
-        #ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer .ng-modal-btn-margin {
-          margin-right: 0.8rem; }
-
-/*# sourceMappingURL=ng_modal.css.map */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	background-color: rgba(0, 0, 0, 0.55);
+	right: 0;
+	bottom: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-size: 16px;
+}
+#ng_modal_outside .ng-modal {
+	background-color: white;
+	font-size: 1.2rem;
+	width: 30rem;
+	min-height: 11rem;
+}
+#ng_modal_outside .ng-modal.ng-modal-shadow {
+	-webkit-box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999,
+		6px 6px 0px #999;
+	box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999,
+		6px 6px 0px #999;
+}
+#ng_modal_outside .ng-modal .ng-modal-content {
+	height: 100%;
+	position: relative;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	width: 32px;
+	height: 32px;
+	opacity: 0.3;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:hover {
+	opacity: 1;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:before,
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-title-close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 33px;
+	width: 2px;
+	background-color: #333;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-body {
+	padding-top: 3rem;
+	min-height: 5rem;
+	text-align: center;
+	padding-bottom: 10px;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-body #ng_modal_prompt_textarea {
+	resize: none;
+	outline: auto;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer {
+	padding: 15px 0px;
+	height: 2rem;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button {
+	color: white;
+	width: 10rem;
+	height: 2.5rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	position: relative;
+	cursor: pointer;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button:before {
+	position: absolute;
+	content: '';
+	background-color: #81d4fa;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	z-index: -1;
+	-webkit-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	border-radius: 5px;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button:hover:before {
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	-o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button[name="yes"] {
+	background-color: #00acc1;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer button[name="cancel"] {
+	background-color: #f4511e;
+}
+#ng_modal_outside .ng-modal .ng-modal-content .ng-modal-footer .ng-modal-btn-margin {
+	margin-right: 0.8rem;
+}
