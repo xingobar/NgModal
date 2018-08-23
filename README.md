@@ -44,6 +44,8 @@ ps:required jquery
             backdrop: .... , // backdrop color
             cancel: function({....}), // modal footer cancel button callback
             shadow: boolean, //whether show shadow or not 
+            shadowClose:boolean, // when click modal outside whether modal close or not (default true)
+            time: ....., // close after xx seconds
         })
     </code>
 </pre>
