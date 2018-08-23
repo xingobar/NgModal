@@ -1,6 +1,10 @@
 # ng-dialog-simple plugin
 ps:required jquery 
 
+<p>Demo</p>
+![image](https://github.com/xingobar/NgModal/blob/master/demo.gif)
+
+
 <p>include jQuery:</p>
 <pre>
     <code>
