@@ -22,7 +22,14 @@
             animate:'ng-rotate',
             body:{
                 text:'測試彈窗'
+            },
+            close:function() {
+                demo();
             }
         });
+
+        function demo() {
+            console.log('set close function')
+        }
     </script>
 </html>
