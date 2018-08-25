@@ -1,8 +1,8 @@
 {
 	"name": "ng-dialog-simple",
-	"version": "1.4.9",
+	"version": "1.5.0",
 	"description": "This is a modal plugin",
-	"main": "ng_modal.min.js",
+	"main": "simple-ng-dialog.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -16,5 +16,11 @@
 	"bugs": {
 		"url": "https://github.com/xingobar/NgModal/issues"
 	},
-	"homepage": "https://github.com/xingobar/NgModal#readme"
+	"homepage": "https://github.com/xingobar/NgModal#readme",
+	"dependencies": {
+		"jquery": "^3.3.1"
+	},
+	"devDependencies": {
+		"jquery": "^3.3.1"
+	}
 }
