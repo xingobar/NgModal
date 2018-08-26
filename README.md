@@ -3,6 +3,7 @@ ps:required jquery
 
 ![image](https://github.com/xingobar/NgModal/blob/master/demo.gif)
 
+## you can git clone https://github.com/xingobar/NgModal.git project
 
 <p>include jQuery:</p>
 <pre>
