@@ -1,6 +1,6 @@
 {
 	"name": "ng-dialog-simple",
-	"version": "1.5.2",
+	"version": "1.5.3",
 	"description": "This is a modal plugin",
 	"main": "simple-ng-dialog.js",
 	"scripts": {
